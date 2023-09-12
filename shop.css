@@ -1,0 +1,40 @@
+
+#nav {
+   
+  height:100px;
+  background:linear-gradient( 35dig pink ,rgb(215, 77, 167),rgb(176, 7, 97));
+  width:100%;
+   
+}
+#logo,#name{
+    float:left;
+  
+}
+#name{
+    padding-left: 20px;
+    font-size: 3em;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#logo{
+    padding-left: 10px;
+}
+a{
+    text-decoration:none;
+    text-align: center;
+    border:0px 0px 10px 0px ;
+    display:block;
+    background-color: rgb(136, 74, 74);
+    border:2px black solid;
+    height:auto;
+    font-size: 2em;;
+}
+button{
+    float:right;
+    margin:10px;
+    width:50px;
+    background-color: rgb(148, 14, 115);
+}
+
+#menu{
+    clear:both;
+}
