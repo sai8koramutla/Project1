@@ -9,7 +9,7 @@
    setInterval(function(){
         var date = new Date();
     var mon=date.getMonth();
-    var day=date.getFullYear();
+    var day=date.getDate();
     var year=date.getFullYear();
     var hr=date.getHours();
     var min=date.getMinutes();
