@@ -14,22 +14,11 @@
     var hr=date.getHours();
     var min=date.getMinutes();
     var sec=date.getSeconds();
-    a.innerText=`${year} ${mon} ${day}  ⌚   ${hr}:${min}:${sec}`
+    a.innerText=`${year} ${mon+1} ${day}  ⌚   ${hr}:${min}:${sec}`
     
     } ,1000)}
 
-    function Menu(){
-        
-            const a=document.createElement("a");
-            const b=document.createElement("a");
-            
-            a.innerHTML="Menu";
-            a.href="menu.html";
-            b.href="settings.html";
-            b.innerHTML="Settings";
-            document.getElementById("menu").appendChild(a);
-            document.getElementById("menu").appendChild(b);
-        }
+   
        
       
     
