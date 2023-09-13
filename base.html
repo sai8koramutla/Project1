@@ -72,7 +72,39 @@ body{
     
 </body>
 <script>
+    var a=true;
   time();
- 
+  var IsShowFunctions=true;
+  (function Menu1()
+   {
+        
+       
+            const a=document.createElement("a");
+            const b=document.createElement("a");
+            
+            a.innerHTML="Menu";
+            a.href="menu.html";
+            b.href="settings.html";
+            b.innerHTML="Settings";
+            document.getElementById("menu").appendChild(a);
+            document.getElementById("menu").appendChild(b);
+            a.id="oMenu";
+            b.id="oSettings";
+            a.style.visibility="hidden";
+            b.style.visibility="hidden";
+            
+    })();
+   function Menu() {
+    if(a===true){
+        document.getElementById("oMenu").style.visibility="visible";
+        document.getElementById("oSettings").style.visibility="visible";
+        a=false;
+    }
+    else{
+        document.getElementById("oMenu").style.visibility="hidden";
+        document.getElementById("oSettings").style.visibility="hidden";
+        a=true;
+    }
+    }
 </script>
 </html>
