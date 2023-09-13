@@ -4,6 +4,7 @@
   height:100px;
   background:linear-gradient( 35dig pink ,rgb(215, 77, 167),rgb(176, 7, 97));
   width:100%;
+  border:2px black solid;
    
 }
 #logo,#name{
@@ -19,12 +20,13 @@
     padding-left: 10px;
 }
 a{
+    color:rgb(146, 10, 146);
     text-decoration:none;
     text-align: center;
     border:0px 0px 10px 0px ;
     display:block;
-    background-color: rgb(136, 74, 74);
-    border:2px black solid;
+    background:linear-gradient( 35dig pink ,rgb(215, 77, 167),rgb(176, 7, 97));
+    box-shadow: 2px 2px 3px;
     height:auto;
     font-size: 2em;;
 }
@@ -37,4 +39,6 @@ button{
 
 #menu{
     clear:both;
+   
+   
 }
