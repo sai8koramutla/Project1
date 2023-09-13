@@ -25,6 +25,7 @@ body{
         
             opacity: 1;
             } /* show it on smaller screen */
+          
     }
     @media screen and(min-width:401px) and (max-width:800px)
     {
@@ -32,6 +33,8 @@ body{
         
         opacity: 1;
     }
+    
+   
     }
     @media screen and (min-width: 801px) 
     {
@@ -39,7 +42,13 @@ body{
         
             opacity: 0;
         }
+        #about{
+            margin:10px;
+            visibility: visible;
+            text-align: justify;;
+        }
     }
+
 
        
       
@@ -65,9 +74,38 @@ body{
           
         </div>
        
-       <div id="menu" align="center" >
+        <div id="menu" align="center" >
 
-       </div>
+        </div>
+    </div>
+    
+
+
+    <div id="about">
+        <h1>About Our Company</h1>
+        <div>
+
+            Shiva Fruit Company is a leading supplier of fresh and delicious fruits in the market. We offer a wide range of fruits, 
+            such as mango, apple, grape, pineapple, watermelon, and coconut, to meet the diverse needs and preferences of our customers.
+             We source our fruits from local farmers who follow organic and sustainable practices.
+              We are committed to providing high-quality products and excellent service to our valued clients.
+               Whether you need fruits for your home, office, or event, you can count on us to deliver them to you in a timely and convenient manner.
+                Contact us today to place your order or to learn more about our company.</div>
+    </div>
+
+    <div id="map">
+        <img src="images/map.jpeg" usemap="map"  height="700px" title="Shiva Fruits">
+    </div>
+
+
+
+
+
+
+    <div id="footer">
+        
+        <br><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3829.064374239091!2d80.09329963431064!3d16.319654692856112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a357ff38b463437%3A0x18e1fb9febde80f1!2sMuppalla%2C%20Andhra%20Pradesh%20522408!5e0!3m2!1sen!2sin!4v1694587229552!5m2!1sen!2sin"  height="200"  width="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><br>
+    
     </div>
     
 </body>
@@ -81,26 +119,33 @@ body{
        
             const a=document.createElement("a");
             const b=document.createElement("a");
-            
+            const c=document.createElement("a");
+            c.innerHTML="About";
+            c.href="About.html";
             a.innerHTML="Menu";
             a.href="menu.html";
             b.href="settings.html";
             b.innerHTML="Settings";
+            document.getElementById("menu").appendChild(c);
             document.getElementById("menu").appendChild(a);
             document.getElementById("menu").appendChild(b);
+            c.id="oAbout";
             a.id="oMenu";
             b.id="oSettings";
+            c.style.visibility="hidden";
             a.style.visibility="hidden";
             b.style.visibility="hidden";
             
     })();
    function Menu() {
     if(a===true){
+        document.getElementById("oAbout").style.visibility="visible";
         document.getElementById("oMenu").style.visibility="visible";
         document.getElementById("oSettings").style.visibility="visible";
         a=false;
     }
     else{
+        document.getElementById("oAbout").style.visibility="hidden";
         document.getElementById("oMenu").style.visibility="hidden";
         document.getElementById("oSettings").style.visibility="hidden";
         a=true;
