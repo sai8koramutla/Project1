@@ -2,7 +2,7 @@
 #nav {
    
     height:100px;
-    background:linear-gradient( 35dig pink ,rgb(215, 77, 167),rgb(176, 7, 97));
+    background:linear-gradient( deg35, pink ,rgb(215, 77, 167),rgb(176, 7, 97));
     width:100%;
     border:2px solid rgb(179, 6, 156);
 
@@ -71,9 +71,10 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-
+    visibility: hidden;
     width:50%;
    
   }
+
   
   
