@@ -5,18 +5,113 @@
         <meta charset="utf-8">
         <meta name="keywords" conytent="hii,hello,how are you">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-         <link rel="icon" href="images/shop.png">
+        <link rel="stylesheet" href="shop.css">
+             <link rel="icon" href="images/shop.png">
+        
         <style>
             body{
                 margin:10px;
                 background:linear-gradient(  35deg,pink ,rgb(215, 77, 167),rgb(176, 7, 97));
             }
+            
+    @media screen and (min-width: 0px) and (max-width: 400px) 
+    {
+        button{
+        
+            opacity: 1;
+            } /* show it on smaller screen */
+           
+          
+    }
+    @media screen and(min-width:401px) and (max-width:800px)
+    {
+        button{
+        
+        opacity: 1;
+    }
+     
+    
+   
+    }
+    @media screen and (min-width: 801px) 
+    {
+        button{
+        
+            opacity: 0;
+        }
+        #about{
+            margin:10px;
+            visibility: visible;
+            text-align: justify;;
+        }
+        #map>img{
+            visibility: visible;
+        }
+    }
         </style>
     </head>
     <body>
+        <div>
+            <button  onclick="Menu()" title="Menu" >
+                <hr width="80%" ><hr width="80%" ><hr width="80%" ></button>
+           </div>
+        <div id="menu" align="center"  >
+           
+        </div>
+
         <h1>About Our Company</h1>
         <div><p>
 
-            Shiva Fruit Company is a leading supplier of fresh and delicious fruits in the market. We offer a wide range of fruits, such as mango, apple, grape, pineapple, watermelon, and coconut, to meet the diverse needs and preferences of our customers. We source our fruits from local farmers who follow organic and sustainable practices. We are committed to providing high-quality products and excellent service to our valued clients. Whether you need fruits for your home, office, or event, you can count on us to deliver them to you in a timely and convenient manner. Contact us today to place your order or to learn more about our company.</p></div>
+            Shiva Fruit Company is a leading supplier of fresh and delicious fruits in the market. 
+            We offer a wide range of fruits, such as mango, apple, grape, pineapple, watermelon, and coconut,
+             to meet the diverse needs and preferences of our customers. We source our fruits from local farmers who follow organic and sustainable practices. 
+             We are committed to providing high-quality products and excellent service to our valued clients. Whether you need fruits for your home, office, 
+             or event, you can count on us to deliver them to you in a timely and convenient manner.
+              Contact us today to place your order or to learn more about our company.
+        </p></div>
+
     </body>
+    <script>
+        var a=true;
+      
+    
+      (function Menu1()
+       {
+            
+           
+                const a=document.createElement("a");
+                const b=document.createElement("a");
+                const c=document.createElement("a");
+                c.innerHTML="About";
+                c.href="About.html";
+                a.innerHTML="Menu";
+                a.href="base.html";
+                b.href="settings.html";
+                b.innerHTML="Settings";
+                document.getElementById("menu").appendChild(c);
+                document.getElementById("menu").appendChild(a);
+                document.getElementById("menu").appendChild(b);
+                c.id="oAbout";
+                a.id="oMenu";
+                b.id="oSettings";
+                c.style.visibility="hidden";
+                a.style.visibility="hidden";
+                b.style.visibility="hidden";
+                
+        })();
+       function Menu() {
+        if(a===true){
+            document.getElementById("oAbout").style.visibility="visible";
+            document.getElementById("oMenu").style.visibility="visible";
+            document.getElementById("oSettings").style.visibility="visible";
+            a=false;
+        }
+        else{
+            document.getElementById("oAbout").style.visibility="hidden";
+            document.getElementById("oMenu").style.visibility="hidden";
+            document.getElementById("oSettings").style.visibility="hidden";
+            a=true;
+        }
+        }
+    </script>
 </html>
