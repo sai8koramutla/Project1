@@ -129,14 +129,14 @@ body{
             c.href="About.html";
             a.innerHTML="Menu";
             a.href="menu.html";
-            b.href="settings.html";
-            b.innerHTML="Settings";
+            b.href="Help.html";
+            b.innerHTML="Help";
             document.getElementById("menu").appendChild(c);
             document.getElementById("menu").appendChild(a);
             document.getElementById("menu").appendChild(b);
             c.id="oAbout";
             a.id="oMenu";
-            b.id="oSettings";
+            b.id="oHelp";
             c.style.visibility="hidden";
             a.style.visibility="hidden";
             b.style.visibility="hidden";
@@ -146,13 +146,13 @@ body{
     if(a===true){
         document.getElementById("oAbout").style.visibility="visible";
         document.getElementById("oMenu").style.visibility="visible";
-        document.getElementById("oSettings").style.visibility="visible";
+        document.getElementById("oHelp").style.visibility="visible";
         a=false;
     }
     else{
         document.getElementById("oAbout").style.visibility="hidden";
         document.getElementById("oMenu").style.visibility="hidden";
-        document.getElementById("oSettings").style.visibility="hidden";
+        document.getElementById("oHelp").style.visibility="hidden";
         a=true;
     }
     }
