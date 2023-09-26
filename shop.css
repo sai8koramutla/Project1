@@ -23,11 +23,11 @@
   a{
       color:rgb(255, 4, 234);
       text-decoration:none;
-      text-align: center;
-      border:2px solid rgb(179, 6, 156);
+      text-align: right;
+      
       display:block;
       background:linear-gradient( 35dig pink ,rgb(215, 77, 167),rgb(176, 7, 97));
-      box-shadow: 0px 0px 10px;
+     
       height:auto;
       font-size: 2em;;
   }
