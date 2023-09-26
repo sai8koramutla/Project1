@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/shop.png">
     <link rel="stylesheet" href="shop.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fuggles&display=swap" rel="stylesheet">
     <script src="shop.js"></script>
     <style>
 
@@ -15,7 +18,10 @@ body{
             background:linear-gradient(  35deg,pink ,rgb(215, 77, 167),rgb(176, 7, 97));
         }
  
-
+        h2{
+            font-family: 'Fuggles', cursive;
+            margin-right:20px ;
+        }
 
 
 
@@ -79,7 +85,7 @@ body{
     </div>
    
 
-<div id="fruits" style="box-shadow: 0px 0px 3px;margin:200px 0px 0px 0px;">
+<div id="fruits" style="box-shadow: 0px 0px 3px;margin:120px 0px 0px 0px;">
 
 
     <div align="center" style="box-shadow: 0px 0px 3px;margin:5px">
@@ -187,7 +193,7 @@ body{
         <br><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3837.3590539947313!2d80.43946607597466!3d15.890249484763634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4a408f042c3c75%3A0x3aa398870aa48578!2sBapatla%20Engineering%20College!5e0!3m2!1sen!2sin!4v1694599049455!5m2!1sen!2sin"  height="200"  width="90%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><br>
     
     </div>
-    
+    <h2 align="right" >Designed By  K.Sai Ram</h2>
 </body>
 <script>
     var a=true;
@@ -204,14 +210,14 @@ body{
             c.href="About.html";
             a.innerHTML="Menu";
             a.href="base.html";
-            b.href="settings.html";
+            b.href="Help.html";
             b.innerHTML="Help";
             document.getElementById("menu").appendChild(c);
             document.getElementById("menu").appendChild(a);
             document.getElementById("menu").appendChild(b);
             c.id="oAbout";
             a.id="oMenu";
-            b.id="oSettings";
+            b.id="oHelp";
             c.style.visibility="hidden";
             a.style.visibility="hidden";
             b.style.visibility="hidden";
@@ -221,13 +227,13 @@ body{
     if(a===true){
         document.getElementById("oAbout").style.visibility="visible";
         document.getElementById("oMenu").style.visibility="visible";
-        document.getElementById("oSettings").style.visibility="visible";
+        document.getElementById("oHelp").style.visibility="visible";
         a=false;
     }
     else{
         document.getElementById("oAbout").style.visibility="hidden";
         document.getElementById("oMenu").style.visibility="hidden";
-        document.getElementById("oSettings").style.visibility="hidden";
+        document.getElementById("oHelp").style.visibility="hidden";
         a=true;
     }
     }
