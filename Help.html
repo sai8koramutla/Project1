@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Shiva Fruits</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="shop.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fuggles&display=swap" rel="stylesheet">
+    
+    <style>
+       
+        body{
+                    margin:0%;
+                    background:linear-gradient(  35deg,pink ,rgb(215, 77, 167),rgb(176, 7, 97));
+                 
+                }
+                h4{
+                    text-align:justify;
+                }
+                h2{
+            font-family: 'Fuggles', cursive;
+            margin-right:20px ;
+        }
+        @media screen and (min-width: 0px) and (max-width: 400px) 
+    {
+        button{
+        
+            opacity: 1;
+            } /* show it on smaller screen */
+           
+          
+    }
+    @media screen and(min-width:401px) and (max-width:800px)
+    {
+        button{
+        
+        opacity: 1;
+    }
+     
+    
+   
+    }
+    @media screen and (min-width: 801px) 
+    {
+        button{
+        
+            opacity: 0;
+        }
+        #about{
+            margin:10px;
+            visibility: visible;
+            text-align: justify;;
+        }
+        #map>img{
+            visibility: visible;
+        }
+    }
+            </style>
+        
+</head>
+<body align="center">
+    <br>
+    <br>
+    <br><br>
+    <div id="menu">
+        <button  onclick="Menu()" title="Menu" >
+            <hr width="80%" ><hr width="80%" ><hr width="80%" ></button>
+       </div>
+    <h1>HELP</h1>
+    <h4 style="margin:5px;">We are here to assist you with any queries you may have.
+         Please feel free to call us at 9848732198 anytime during our working hours. 
+         You can also visit our office and meet us in person. Our map will guide you to our location.
+          We value your cooperation and support. We assure you that we will do our best to help you. </h4>
+          
+    <div id="footer">
+        
+        <br><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3837.3590539947313!2d80.43946607597466!3d15.890249484763634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4a408f042c3c75%3A0x3aa398870aa48578!2sBapatla%20Engineering%20College!5e0!3m2!1sen!2sin!4v1694599049455!5m2!1sen!2sin"  height="200"  width="90%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><br>
+        <h2 align="right" >Designed By  K.Sai Ram</h2>
+    </div>
+<script>
+
+var a=true;
+      
+    (function Menu1()
+    {
+         
+        
+             const a=document.createElement("a");
+             const b=document.createElement("a");
+             const c=document.createElement("a");
+             c.innerHTML="About";
+             c.href="About.html";
+             a.innerHTML="Menu";
+             a.href="base.html";
+             b.href="settings.html";
+             b.innerHTML="Help";
+             document.getElementById("menu").appendChild(c);
+             document.getElementById("menu").appendChild(a);
+             document.getElementById("menu").appendChild(b);
+             c.id="oAbout";
+             a.id="oMenu";
+             b.id="oSettings";
+             c.style.visibility="hidden";
+             a.style.visibility="hidden";
+             b.style.visibility="hidden";
+             
+     })();
+    function Menu() {
+     if(a===true){
+         document.getElementById("oAbout").style.visibility="visible";
+         document.getElementById("oMenu").style.visibility="visible";
+         document.getElementById("oSettings").style.visibility="visible";
+         a=false;
+     }
+     else{
+         document.getElementById("oAbout").style.visibility="hidden";
+         document.getElementById("oMenu").style.visibility="hidden";
+         document.getElementById("oSettings").style.visibility="hidden";
+         a=true;
+     }
+     }
+ </script>
+</html>
