@@ -2,7 +2,7 @@
    
     var parent= document.getElementById("main");
     a.style.float="right";
-    a.style.margin="40px";
+    a.style.margin="5px";
     a.style.color="white";
     parent.appendChild(a);
    
