@@ -62,8 +62,8 @@
 </head>
 <body align="center">
     
-    <div id="menu">
-        <div>
+    <div id="m">
+        <div id="menu">
         <button  onclick="Menu()" title="Menu" >
         </div>
             <hr width="80%" ><hr width="80%" ><hr width="80%" ></button>
@@ -96,9 +96,9 @@ var a=true;
              a.href="base.html";
              b.href="Help.html";
              b.innerHTML="Help";
-             document.getElementById("menu").appendChild(c);
-             document.getElementById("menu").appendChild(a);
-             document.getElementById("menu").appendChild(b);
+             document.getElementById("m").appendChild(c);
+             document.getElementById("m").appendChild(a);
+             document.getElementById("m").appendChild(b);
              c.id="oAbout";
              a.id="oMenu";
              b.id="oSettings";
