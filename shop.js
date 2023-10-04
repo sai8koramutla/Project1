@@ -2,7 +2,7 @@
    
     var parent= document.getElementById("main");
     a.style.float="right";
-    a.style.margin="5px";
+    a.style.margin="px";
     a.style.color="white";
     parent.appendChild(a);
    
@@ -14,7 +14,7 @@
     var hr=date.getHours();
     var min=date.getMinutes();
     var sec=date.getSeconds();
-    a.innerHTML=`Date🗓️: ${year}/${mon+1}/${day} &nbsp Time⌛:${hr}:${min}:${sec}`
+    a.innerText=`Date🗓️: ${year}/${mon+1}/${day}  🕧  Time⌛:${hr}:${min}:${sec}`
     
     } ,1000)}
 
