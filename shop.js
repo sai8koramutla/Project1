@@ -14,7 +14,7 @@
     var hr=date.getHours();
     var min=date.getMinutes();
     var sec=date.getSeconds();
-    a.innerHtml=`Date🗓️: ${year}/${mon+1}/${day} &nbsp Time⌛:${hr}:${min}:${sec}`
+    a.innerHTML=`Date🗓️: ${year}/${mon+1}/${day} &nbsp Time⌛:${hr}:${min}:${sec}`
     
     } ,1000)}
 
